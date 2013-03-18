@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvErrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Errand: "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+    
+    <EditText
+        android:id="@+id/txtErrand"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type an errand"
+        android:layout_toRightOf="@+id/tvErrand" />
+    
+    <TextView
+        android:id="@+id/tvPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place: "
+        android:layout_below="@+id/txtErrand" />
+    
+    <EditText
+        android:id="@+id/txtPlace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type a address (street, town)"
+        android:layout_below="@+id/txtErrand"
+        android:layout_toRightOf="@+id/tvPlace" />
+    
+    <TextView
+        android:id="@+id/tvNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes: "
+        android:layout_below="@+id/txtPlace" />
+    
+    <EditText
+        android:id="@+id/txtNotes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Make notes"
+        android:layout_below="@+id/txtPlace"
+        android:layout_toRightOf="@+id/tvNotes" />
+
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Remind me"
+        android:layout_below="@+id/txtNotes"
+        android:onClick="onClick" />
+    
+
+</RelativeLayout>
